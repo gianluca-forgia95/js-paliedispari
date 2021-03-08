@@ -30,11 +30,36 @@ function isEven(sum) {
  } else {
    console.log( somma + ' la somma dei numeri è dispari');
  }
-//Decreto il vincitore stabilendo le condizioni 
-if ( numero > random ) {
+// //Decreto il vincitore stabilendo le condizioni
+// if ( numero > random ) {
+//   alert('hai vinto');
+// } else if ( random > numero ) {
+//   alert('ha vinto la cpu');
+// } else {
+//   alert('pareggio, ritenta');
+// }
+
+//Stabilisco il vincitore con una funzione
+function winner( num1, num2) {
+  if (num1 > num2) {
+  return true;
+  }
+  return false;
+}
+//Funzione per il pareggio
+function draw( num1, num2) {
+  if ( num1 == num2 ) {
+    return true;
+  }
+  return false;
+}
+//Stabilisco le condizioni e stampo con un alert
+if ( winner( numero, random)) {
   alert('hai vinto');
-} else if ( random > numero ) {
-  alert('ha vinto la cpu');
-} else {
-  alert('pareggio, ritenta');
+}
+ else if ( draw(numero, random) ) {
+  alert('pareggio');
+}
+else {
+  alert('hai perso');
 }
