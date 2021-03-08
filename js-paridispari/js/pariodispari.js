@@ -30,6 +30,8 @@ function isEven(sum) {
  } else {
    console.log( somma + ' la somma dei numeri è dispari');
  }
+
+//Risultato stabilito con if else if e else
 // //Decreto il vincitore stabilendo le condizioni
 // if ( numero > random ) {
 //   alert('hai vinto');
@@ -39,6 +41,8 @@ function isEven(sum) {
 //   alert('pareggio, ritenta');
 // }
 
+
+//Risultato stabilito con funzioni
 //Stabilisco il vincitore con una funzione
 function winner( num1, num2) {
   if (num1 > num2) {
