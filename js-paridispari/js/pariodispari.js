@@ -15,5 +15,18 @@ function randomNumber( min, max) {
 }
 //Determino tra quali valori voglio il numero random con la variabile
 var random = randomNumber(0 ,5);
-//Stampo la somma dei numeri
-console.log( random + numero );
+//Creo la variabile per la somma
+var somma = random + numero;
+//creo la funzione per stabilire se la somma è pari o Dispari
+function isEven(sum) {
+  if ( sum % 2 == 0) {
+    return true;
+  }
+  return false;
+}
+//Stampo se la somma è pari o dispari
+ if ( isEven(somma)) {
+   console.log(somma + ' la somma dei numeri è pari');
+ } else {
+   console.log( somma + ' la somma dei numeri è dispari');
+ }
